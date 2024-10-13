@@ -63,4 +63,5 @@ A not found (404) is sent back for the above if a isbn doesnt exist or book has 
 ## NOTES
 Basic authentication has been implemented, but not using JWT tokens from database or services like keycloak <br/>
 Full integration tests for the advice has not been implemented, but all code paths have been tried to be covered <br/>
+Caching has been enabled on the Library methods for creation of a book, which are updated on return and borrow and evicted on delete <br/>
 Basic rate limiting mechanism for API is not present
